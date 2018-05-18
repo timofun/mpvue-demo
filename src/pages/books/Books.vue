@@ -1,8 +1,6 @@
 <template>
-  <div class="page">
-    <p>
-      nihao 
-    </p>
+  <div class="me-page">
+    书籍列表
   </div>
 </template>
 
@@ -21,4 +19,3 @@ export default {
 
 <style scoped>
 </style>
-
