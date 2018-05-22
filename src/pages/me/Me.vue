@@ -2,13 +2,15 @@
   <div class="container">
     <div class="userinfo" @click='login'>
       <img :src="userinfo.avatarUrl" alt="">
-      <p>{{userinfo.nickName}}</p>
+      
     </div>
     <YearProgress></YearProgress>
 
     <!-- <button open-type="getUserInfo" @click='login' class='btn'></button>  -->
 
     <button v-if='userinfo.openId' @click='scanBook' class='btn'>添加图书</button>
+
+    <button v-if='!userinfo.openId&&canIUse'  open-type='getUserInfo' class='btn' @getuserinfo='login'>点击登录</button>
   </div>
 </template>
 <script>
@@ -25,7 +27,8 @@ export default {
       userinfo: {
         avatarUrl: '../../../static/img/default-avatar.png',
         nickName: '点击登录'
-      }
+      },
+      canIUse: wx.canIUse('button.open-type.getUserInfo')
     }
   },
   methods: {
