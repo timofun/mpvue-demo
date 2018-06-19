@@ -11,7 +11,7 @@ export default {
     'window': {
       'backgroundTextStyle': 'light',
       'navigationBarBackgroundColor': '#EA5149',
-      'navigationBarTitleText': '芒果图书',
+      'navigationBarTitleText': '清宇图书',
       'navigationBarTextStyle': 'light'
     },
     'tabBar': {
