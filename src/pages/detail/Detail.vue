@@ -6,7 +6,8 @@
     <textarea v-model='comment'
               class='textarea'
               :maxlength='100'
-              placeholder='请输入图书短评'></textarea>
+              placeholder='请输入图书短评'>
+    </textarea>
     <div class='location'>
       地理位置：
       <switch color='#EA5A49' :checked='location' @change='getGeo'></switch>

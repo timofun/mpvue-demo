@@ -12,6 +12,7 @@
 	"compileType": "miniprogram",
 	"appid": "wx080f984d4bce5bca",
 	"projectname": "my-mpvue",
+	"libVersion": "2.1.0",
 	"condition": {
 		"search": {
 			"current": -1,
